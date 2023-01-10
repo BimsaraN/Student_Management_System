@@ -27,9 +27,6 @@ router.route("/add").post((req,res) => {
 })
 
 
-//ifjgneroimgjp,oxefkpawo0pwengmp
-
-
 
 
 //Read(Data Retrieve)
@@ -69,7 +66,6 @@ router.route("/update/:id").put(async(req,res) => {
         res.status(500).send({status: "Error with updating data", error: err.message});
     })
 })
-
 
 
 
