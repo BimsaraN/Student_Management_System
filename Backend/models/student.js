@@ -17,18 +17,7 @@ const studentSchema = new Schema({
     gender: {
         type: String,
         required: true
-    },
-
-    address: {
-        type: String,
-        required: true
-    },
-
-    School: {
-        type: String,
-        required: true
     }
-
 })
 
 const Student = mongoose.model("Student", studentSchema);
