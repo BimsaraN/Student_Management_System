@@ -1,3 +1,4 @@
+//Server.js
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -14,16 +15,6 @@ app.use(bodyParser.json());
 
 //connect to database
 const URL = process.env.MONGODB_URL;
-
-/*mongoose.connect(URL)
-    .then(() => {
-        app.listen(PORT, () => {
-            console.log('Server is up and running on port', PORT);
-        });
-    })
-    .catch((error) => {
-        console.log("Error!!");
-    })*/
 
 mongoose.connect(URL);
 
